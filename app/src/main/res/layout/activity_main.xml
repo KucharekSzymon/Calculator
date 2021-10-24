@@ -35,7 +35,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:onClick="numberPress"
-        android:text="1"
+        android:text="7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button24" />
 
@@ -56,6 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="16dp"
+        android:onClick="operation"
         android:text="-"
         app:layout_constraintStart_toEndOf="@+id/button10"
         app:layout_constraintTop_toBottomOf="@+id/button20" />
@@ -66,6 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
+        android:onClick="minuspress"
         android:text="+/-"
         android:textSize="8sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,7 +80,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:onClick="numberPress"
-        android:text="2"
+        android:text="8"
         app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/button24" />
 
@@ -88,6 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="16dp"
+        android:onClick="operation"
         android:text="+"
         app:layout_constraintStart_toEndOf="@+id/button13"
         app:layout_constraintTop_toBottomOf="@+id/button18" />
@@ -110,7 +113,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:onClick="numberPress"
-        android:text="8"
+        android:text="2"
         app:layout_constraintStart_toEndOf="@+id/button11"
         app:layout_constraintTop_toBottomOf="@+id/button9" />
 
@@ -121,7 +124,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:onClick="numberPress"
-        android:text="3"
+        android:text="9"
         app:layout_constraintStart_toEndOf="@+id/button2"
         app:layout_constraintTop_toBottomOf="@+id/button26" />
 
@@ -131,6 +134,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="16dp"
+        android:onClick="equal"
         android:text="="
         app:layout_constraintStart_toEndOf="@+id/button16"
         app:layout_constraintTop_toBottomOf="@+id/button19" />
@@ -141,30 +145,43 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="16dp"
-        android:text="/"
+        android:onClick="operation"
+        android:text="*"
         app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/button22" />
 
     <Button
-        android:id="@+id/button22"
-        android:layout_width="70dp"
+        android:id="@+id/button4"
+        android:layout_width="45dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:onClick="operation"
+        android:text="/"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="24dp"
         android:onClick="DEL"
         android:text="DEL"
-        android:textSize="14sp"
+        android:textSize="6sp"
         app:layout_constraintStart_toEndOf="@+id/button26"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
 
     <Button
         android:id="@+id/button26"
-        android:layout_width="65dp"
+        android:layout_width="45dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="24dp"
+        android:onClick="factorial"
         android:text="N!"
-        android:textSize="14sp"
+        android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@+id/button24"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
 
@@ -174,9 +191,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="24dp"
+        android:onClick="operation"
         android:text="bⁿ"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button4"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
 
     <Button
@@ -186,7 +204,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:onClick="numberPress"
-        android:text="9"
+        android:text="3"
         app:layout_constraintStart_toEndOf="@+id/button12"
         app:layout_constraintTop_toBottomOf="@+id/button10" />
 
@@ -196,6 +214,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
+        android:onClick="DOT"
         android:text="."
         app:layout_constraintStart_toEndOf="@+id/button14"
         app:layout_constraintTop_toBottomOf="@+id/button13" />
@@ -207,7 +226,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:onClick="numberPress"
-        android:text="7"
+        android:text="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
 
@@ -218,6 +237,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
+        android:digits="0123456789-."
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
