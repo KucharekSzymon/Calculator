@@ -13,10 +13,24 @@ public class MainActivity extends AppCompatActivity {
 
     public String op = "";
     Double a;
+    String save = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+    public void save(View view){
+        EditText textbox = findViewById(R.id.editTextNumberDecimal);
+        save =  textbox.getText().toString();
+    }
+
+    public void load(View view){
+        EditText textbox = findViewById(R.id.editTextNumberDecimal);
+        textbox.setText(save);
+    }
+
+    public void clear(View view){
+        save =  "";
     }
 
     public void numberPress(View view){
